@@ -7,7 +7,7 @@
 
 import MetalKit
 
-class AAPLRenderer: NSObject, MTKViewDelegate {
+class Renderer: NSObject, MTKViewDelegate {
     let device: MTLDevice
     let commandQueue: MTLCommandQueue
 

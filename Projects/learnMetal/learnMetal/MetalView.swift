@@ -19,14 +19,14 @@ struct MetalView: UIViewRepresentable {
         mtkView.device = MTLCreateSystemDefaultDevice()
         mtkView.clearColor = MTLClearColorMake(0.0, 0.5, 1.0, 1.0)
         mtkView.enableSetNeedsDisplay = true
-        let renderer = AAPLRenderer(metalKitView: mtkView)
+        let renderer = Renderer(metalKitView: mtkView)
         mtkView.delegate = renderer
         context.coordinator.renderer = renderer
         return mtkView
     }
     func updateUIView(_ uiView: MTKView, context: Context) {}
     class Coordinator {
-        var renderer: AAPLRenderer?
+        var renderer: Renderer?
     }
 }
 
