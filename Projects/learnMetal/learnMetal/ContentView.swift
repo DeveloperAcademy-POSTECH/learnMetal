@@ -5,17 +5,14 @@
 //  Created by Hyeok Cho on 8/13/25.
 //
 
+//  ContentView.swift
+//  SwiftUI view that presents the MetalKit-backed MetalView
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        MetalView()
+            .ignoresSafeArea()
     }
 }
 

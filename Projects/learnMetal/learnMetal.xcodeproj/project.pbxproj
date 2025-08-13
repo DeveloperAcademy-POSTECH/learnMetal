@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0602BE3C2E4CB027007E6F6B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602BE322E4CAC9D007E6F6B /* Metal.framework */; };
+		0602BE3F2E4CB028007E6F6B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602BE342E4CACA4007E6F6B /* MetalKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0602BE152E4CAB7F007E6F6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		0602BE072E4CAB7D007E6F6B /* learnMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0602BE142E4CAB7F007E6F6B /* learnMetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnMetalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0602BE1E2E4CAB7F007E6F6B /* learnMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0602BE322E4CAC9D007E6F6B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		0602BE342E4CACA4007E6F6B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0602BE3C2E4CB027007E6F6B /* Metal.framework in Frameworks */,
+				0602BE3F2E4CB028007E6F6B /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				0602BE092E4CAB7D007E6F6B /* learnMetal */,
 				0602BE172E4CAB7F007E6F6B /* learnMetalTests */,
 				0602BE212E4CAB7F007E6F6B /* learnMetalUITests */,
+				0602BE312E4CAC9C007E6F6B /* Frameworks */,
 				0602BE082E4CAB7D007E6F6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +100,15 @@
 				0602BE1E2E4CAB7F007E6F6B /* learnMetalUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0602BE312E4CAC9C007E6F6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0602BE342E4CACA4007E6F6B /* MetalKit.framework */,
+				0602BE322E4CAC9D007E6F6B /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
