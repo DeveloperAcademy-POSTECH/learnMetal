@@ -17,11 +17,11 @@ struct MetalView: UIViewRepresentable {
     func makeUIView(context: Context) -> MTKView {
         let mtkView = MTKView()
         mtkView.device = MTLCreateSystemDefaultDevice()
-        mtkView.clearColor = MTLClearColorMake(0.0, 0.5, 1.0, 1.0)
-        mtkView.enableSetNeedsDisplay = true
+        
         let renderer = Renderer(metalKitView: mtkView)
         mtkView.delegate = renderer
         context.coordinator.renderer = renderer
+        
         return mtkView
     }
     func updateUIView(_ uiView: MTKView, context: Context) {}
