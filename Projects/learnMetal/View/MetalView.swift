@@ -18,7 +18,7 @@ struct MetalView: UIViewRepresentable {
     //UIKit은 이벤트를 직접 반환하는 함수 호출 방식이 아니라,
     //뷰나 객체에서 발생하는 이벤트를 다른 객체에 위임(delegate)해서 처리하는 구조를 씀.
     func makeCoordinator() -> Coordinator {
-        return Coordinator(self)
+        return Coordinator()
     }
     
     //UIViewRepresentable 준수를 위한 메서드 1
@@ -38,12 +38,6 @@ struct MetalView: UIViewRepresentable {
     
     class Coordinator {
         var delegate:MetalKitViewDelegate?
-        var parent: MetalView
-        
-        init(_ parent: MetalView) {
-            self.parent = parent
-            self.delegate = nil
-        }
     }
 }
 
