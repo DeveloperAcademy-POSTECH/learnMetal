@@ -37,9 +37,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0602BE092E4CAB7D007E6F6B /* learnMetal */ = {
+		0602BE092E4CAB7D007E6F6B /* Application */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = learnMetal;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		0602BE172E4CAB7F007E6F6B /* learnMetalTests */ = {
@@ -50,6 +50,16 @@
 		0602BE212E4CAB7F007E6F6B /* learnMetalUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = learnMetalUITests;
+			sourceTree = "<group>";
+		};
+		0657E3172E4D6C5300EB5154 /* Renderer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		0657E3182E4D6C7000EB5154 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -84,7 +94,9 @@
 		0602BDFE2E4CAB7D007E6F6B = {
 			isa = PBXGroup;
 			children = (
-				0602BE092E4CAB7D007E6F6B /* learnMetal */,
+				0657E3182E4D6C7000EB5154 /* View */,
+				0657E3172E4D6C5300EB5154 /* Renderer */,
+				0602BE092E4CAB7D007E6F6B /* Application */,
 				0602BE172E4CAB7F007E6F6B /* learnMetalTests */,
 				0602BE212E4CAB7F007E6F6B /* learnMetalUITests */,
 				0602BE312E4CAC9C007E6F6B /* Frameworks */,
@@ -127,7 +139,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0602BE092E4CAB7D007E6F6B /* learnMetal */,
+				0602BE092E4CAB7D007E6F6B /* Application */,
+				0657E3172E4D6C5300EB5154 /* Renderer */,
+				0657E3182E4D6C7000EB5154 /* View */,
 			);
 			name = learnMetal;
 			packageProductDependencies = (
